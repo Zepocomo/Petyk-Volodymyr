@@ -1,0 +1,12 @@
+#include "head.h"
+int main()
+{
+    char* arr = { 0 }; int n = 0, numopen = 0, numclose = 0;
+    arr = enter_string(n);
+    if  (num_of_bracket(arr, n, numopen, numclose) == 0) cout << "\nError, diference number of brackets!\n";
+    cout << numopen << "- the number of opening brackets\n" << numclose << "- the number of closing brackets\n";
+    system("pause");
+    return 0;
+}
+
+

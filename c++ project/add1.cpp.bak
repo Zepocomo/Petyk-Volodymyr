@@ -1,0 +1,11 @@
+#include "head.h"
+char *enter_string(int &n)
+{
+    char str[SIZ];
+    cout << "enter the string: \n";
+    cin.getline(str, SIZ - 1);
+    n = int(strlen(str));
+    char *string = new char[n+1];
+    strcpy(string, str); 
+    return string;
+}

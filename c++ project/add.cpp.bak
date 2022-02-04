@@ -1,0 +1,12 @@
+#include "head.h" 
+bool num_of_bracket(char* string, int n, int &open, int &close)
+{
+    char str[SIZ];
+    for (int i = 0; i < n; i++) {
+        if (string[i] == ')') {
+             close++;
+        }else if (string[i] == '(')
+            open++;        
+    }
+    return (close == open);
+}

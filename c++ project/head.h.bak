@@ -1,0 +1,7 @@
+#include <iostream>
+#include <cstring>
+#include <Windows.h>
+using namespace std;
+const int SIZ = BUFSIZ * 1;
+char *enter_string(int &n);
+bool num_of_bracket(char* string, int n, int &open, int &close);
